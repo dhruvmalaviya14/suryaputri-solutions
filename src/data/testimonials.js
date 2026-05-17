@@ -1,0 +1,42 @@
+export const testimonials = [
+  {
+    name: 'Marcus Thompson',
+    role: 'CTO',
+    company: 'NovaPay Financial',
+    quote: 'Suryaputri delivered a payment platform that handles 50,000 transactions daily with 99.98% uptime. Their engineering quality is genuinely world-class. They are our go-to partner for any complex technical build.',
+    avatar: 'MT',
+    rating: 5,
+  },
+  {
+    name: 'Dr. Sneha Krishnan',
+    role: 'Director of Technology',
+    company: 'Apollo Medical Group',
+    quote: 'Working with Suryaputri on our EHR system was exceptional. They understood the regulatory complexity of healthcare data, delivered on time, and the product has transformed how our 120 clinics operate.',
+    avatar: 'SK',
+    rating: 5,
+  },
+  {
+    name: 'James Whitfield',
+    role: 'Co-Founder',
+    company: 'IntelliRecruit AI',
+    quote: 'The AI pipeline they built processes 10,000 resumes a day with remarkable accuracy. Our recruiters went from drowning in CVs to confidently shortlisting. The ROI was evident within 60 days of go-live.',
+    avatar: 'JW',
+    rating: 5,
+  },
+  {
+    name: 'Aisha Rahman',
+    role: 'Head of Digital',
+    company: 'ShopSphere Retail',
+    quote: 'Our conversion rate jumped 28% after the replatforming. The headless commerce approach they recommended was exactly right. Fast, personalized, and stable even during our biggest flash sale.',
+    avatar: 'AR',
+    rating: 5,
+  },
+  {
+    name: 'Rajan Mehrotra',
+    role: 'VP Operations',
+    company: 'LogiFlow Logistics',
+    quote: 'Real-time shipment visibility across 30 countries was a problem we had struggled with for years. Suryaputri solved it in 6 months. The dashboard alone saved us 30% in delay-related costs.',
+    avatar: 'RM',
+    rating: 5,
+  },
+]
