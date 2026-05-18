@@ -18,14 +18,14 @@ function PageHero() {
           <span style={{ color: '#E8622A' }}>Proud Of</span>
         </h1>
         <p className="text-base md:text-lg leading-relaxed mx-auto" style={{ color: '#4A5568', maxWidth: '540px' }}>
-          A curated selection of production systems we have engineered — from FinTech payment platforms to AI-powered SaaS products.
+          A selection of websites and apps we have built for schools, shops, salons, and small businesses.
         </p>
       </div>
     </section>
   )
 }
 
-const projectEmojis = { 1: '💳', 2: '🏥', 3: '🛍️', 4: '📱', 5: '🤖', 6: '📦' }
+const projectEmojis = { 1: '🍽️', 2: '💇', 3: '🛒', 4: '🏃', 5: '📚', 6: '🍜' }
 
 function ProjectCard({ project, index, visible }) {
   const [hovered, setHovered] = useState(false)

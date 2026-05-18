@@ -2,9 +2,8 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Play, CheckCircle } from 'lucide-react'
 
 const highlights = [
-  'ISO 27001 Certified',
-  '80+ Engineers',
-  '50+ Projects Delivered',
+  '40+ Engineers',
+  '25+ Projects Delivered',
 ]
 
 export default function Hero() {
@@ -111,7 +110,7 @@ export default function Hero() {
                     </div>
                     <div>
                       <p className="text-xs font-semibold" style={{ color: '#E8622A' }}>LATEST LAUNCH</p>
-                      <p className="text-sm font-semibold" style={{ color: '#1A1A2E' }}>NovaPay v2.0 — Live</p>
+                      <p className="text-sm font-semibold" style={{ color: '#1A1A2E' }}>Salon Booking — Live</p>
                     </div>
                   </div>
                 </div>

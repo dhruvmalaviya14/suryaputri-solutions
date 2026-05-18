@@ -116,7 +116,7 @@ function Timeline() {
   return (
     <section className="section" style={{ background: 'white' }}>
       <div className="container-custom">
-        <SectionHeading badge="Our Journey" title={<>Eight Years of <span style={{ color: '#E8622A' }}>Building & Growing</span></>} center />
+        <SectionHeading badge="Our Journey" title={<>Our Path of <span style={{ color: '#E8622A' }}>Building & Growing</span></>} center />
         <div ref={ref} className="relative max-w-3xl mx-auto">
           <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px" style={{ background: '#E5E1D8', transform: 'translateX(-50%)' }} />
           <div className="space-y-8">

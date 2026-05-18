@@ -44,7 +44,7 @@ export default function FeaturedProjects() {
                   style={{ background: project.accent + '18', border: `1px solid ${project.accent}22` }}
                 >
                   <span className="text-2xl">
-                    {project.id === 1 ? '💳' : project.id === 2 ? '🏥' : project.id === 3 ? '🛍️' : '📱'}
+                    {project.id === 1 ? '🍽️' : project.id === 2 ? '💇' : project.id === 3 ? '🛒' : '📱'}
                   </span>
                 </div>
               </div>

@@ -10,6 +10,7 @@ import Technologies from './pages/Technologies'
 import Projects from './pages/Projects'
 import Careers from './pages/Careers'
 import Insights from './pages/Insights'
+import BlogPost from './pages/BlogPost'
 import Contact from './pages/Contact'
 
 function ScrollRestorer() {
@@ -34,6 +35,7 @@ export default function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/careers" element={<Careers />} />
           <Route path="/insights" element={<Insights />} />
+          <Route path="/insights/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </main>

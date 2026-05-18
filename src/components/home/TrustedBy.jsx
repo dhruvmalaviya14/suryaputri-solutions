@@ -1,14 +1,12 @@
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 const clients = [
-  'NovaPay Financial',
-  'Apollo Medical',
-  'ShopSphere',
-  'LogiFlow',
-  'IntelliRecruit',
-  'MediTrack',
-  'FieldPulse',
-  'DataVault Inc.',
+  'Greenfield College',
+  'StyleZone Salon',
+  'FreshMart Grocery',
+  'FitLog Wellness',
+  'StudyHub Planner',
+  'Spice Garden Restaurant',
 ]
 
 export default function TrustedBy() {
@@ -21,7 +19,7 @@ export default function TrustedBy() {
           className={`text-xs font-semibold uppercase tracking-widest text-center mb-8 transition-all duration-700 ${visible ? 'opacity-100' : 'opacity-0'}`}
           style={{ color: '#8A96A3' }}
         >
-          Trusted by growing companies worldwide
+          Trusted by local businesses & institutions
         </p>
         <div className="flex flex-wrap justify-center items-center gap-x-10 gap-y-5">
           {clients.map((client, i) => (

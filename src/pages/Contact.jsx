@@ -213,7 +213,7 @@ function ContactInfo() {
       >
         <MapPin size={28} style={{ color: '#E8622A' }} />
         <p className="text-sm font-medium" style={{ color: '#4A5568' }}>Kamrej, Surat, Gujarat</p>
-        <p className="text-xs" style={{ color: '#8A96A3' }}>India — 394190</p>
+        <p className="text-xs" style={{ color: '#8A96A3' }}>India — 394180</p>
       </div>
     </div>
   )
