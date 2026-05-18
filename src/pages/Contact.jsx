@@ -212,8 +212,8 @@ function ContactInfo() {
         style={{ height: '200px', background: 'linear-gradient(135deg, #EDE9E1, #F5F4F0)', border: '1px solid #E5E1D8', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '8px' }}
       >
         <MapPin size={28} style={{ color: '#E8622A' }} />
-        <p className="text-sm font-medium" style={{ color: '#4A5568' }}>Koramangala, Bangalore</p>
-        <p className="text-xs" style={{ color: '#8A96A3' }}>India — 560034</p>
+        <p className="text-sm font-medium" style={{ color: '#4A5568' }}>Kamrej, Surat, Gujarat</p>
+        <p className="text-xs" style={{ color: '#8A96A3' }}>India — 394190</p>
       </div>
     </div>
   )

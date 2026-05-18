@@ -83,7 +83,7 @@ export default function Logo({ dark = false, size = 38 }) {
             marginTop: '1px',
           }}
         >
-          Solutions
+          Enterprise
         </span>
       </span>
     </span>

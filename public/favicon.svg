@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
-  <!-- Black rounded square background -->
-  <rect width="48" height="48" rx="10" fill="#000000"/>
-
-  <!-- Yellow "S" letter mark representing SURYAPUTRI ENTERPRISE -->
-  <text x="24" y="33" font-family="Arial Black, Arial, sans-serif" font-size="26" font-weight="900" fill="#F5A623" text-anchor="middle">S</text>
-</svg>

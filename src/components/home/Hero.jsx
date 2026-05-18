@@ -154,10 +154,10 @@ export default function Hero() {
           style={{ borderColor: '#E5E1D8' }}
         >
           {[
-            { number: '80+', label: 'Team Members' },
-            { number: '50+', label: 'Projects Shipped' },
-            { number: '7+', label: 'Years in Business' },
-            { number: '3', label: 'Continents Served' },
+            { number: '40+', label: 'Team Members' },
+            { number: '25+', label: 'Projects Shipped' },
+            { number: '4+', label: 'Years in Business' },
+            { number: '2', label: 'Continents Served' },
           ].map(stat => (
             <div key={stat.label}>
               <div className="font-display font-bold text-3xl md:text-4xl" style={{ color: '#E8622A', letterSpacing: '-0.03em' }}>
