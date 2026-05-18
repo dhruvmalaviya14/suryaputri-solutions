@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
-import { Menu, X, ChevronDown, ArrowRight } from 'lucide-react'
+import { Menu, X, ArrowRight } from 'lucide-react'
+import Logo from '../ui/Logo'
 
 const navLinks = [
   { to: '/', label: 'Home' },
@@ -12,29 +13,10 @@ const navLinks = [
   { to: '/careers', label: 'Careers' },
 ]
 
-function Logo() {
+function NavLogo() {
   return (
-    <Link to="/" className="flex items-center gap-2.5 group">
-      <div className="relative">
-        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="36" height="36" rx="10" fill="#E8622A" />
-          <path
-            d="M10 13C10 11.3431 11.3431 10 13 10H23C24.6569 10 26 11.3431 26 13C26 14.6569 24.6569 16 23 16H13C11.3431 16 10 14.6569 10 13Z"
-            fill="white"
-          />
-          <path
-            d="M10 23C10 21.3431 11.3431 20 13 20H20C21.6569 20 23 21.3431 23 23C23 24.6569 21.6569 26 20 26H13C11.3431 26 10 24.6569 10 23Z"
-            fill="white"
-            fillOpacity="0.6"
-          />
-          <circle cx="26" cy="23" r="3" fill="white" fillOpacity="0.9" />
-        </svg>
-      </div>
-      <div>
-        <span className="font-display font-bold text-lg tracking-tight" style={{ color: '#1A1A2E', letterSpacing: '-0.02em' }}>
-          Surya<span style={{ color: '#E8622A' }}>putri</span>
-        </span>
-      </div>
+    <Link to="/" aria-label="Suryaputri Solutions – Home">
+      <Logo dark={false} size={38} />
     </Link>
   )
 }
@@ -72,7 +54,7 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           <div className="flex items-center justify-between h-16">
-            <Logo />
+            <NavLogo />
 
             {/* Desktop nav */}
             <nav className="hidden lg:flex items-center gap-1">
@@ -135,7 +117,7 @@ export default function Navbar() {
         style={{ background: '#FAFAF8', borderLeft: '1px solid #E5E1D8' }}
       >
         <div className="flex items-center justify-between px-5 py-4 border-b" style={{ borderColor: '#E5E1D8' }}>
-          <Logo />
+          <NavLogo />
           <button onClick={() => setMobileOpen(false)} className="p-2 rounded-lg hover:bg-cream-100" style={{ color: '#1A1A2E' }}>
             <X size={20} />
           </button>

@@ -39,18 +39,18 @@ function Story() {
               title={<>From a 3-Person Team to an Engineering <span style={{ color: '#E8622A' }}>Powerhouse</span></>}
             />
             <div className="space-y-4 text-sm leading-relaxed" style={{ color: '#4A5568' }}>
-              <p>In 2017, Arjun Sharma and Priya Nair left corporate engineering roles with a conviction: small, focused engineering teams could outperform large, bloated ones — if they were structured right.</p>
-              <p>We started with three engineers and one client. That client stayed with us for four years. That relationship became the blueprint for how we work: deeply embedded, radically transparent, and relentlessly focused on outcomes.</p>
-              <p>Today, Suryaputri is an 80+ person engineering firm with clients across India, the United States, and Southeast Asia. We have delivered over 50 production systems, ranging from healthcare EHRs to FinTech payment infrastructure.</p>
-              <p>The conviction that started us has not changed — only grown more refined.</p>
+              <p>Founded in 2020 by Vijay Savani and Ravi Savani, Suryaputri was started with a simple vision — to help businesses build modern, scalable, and reliable digital solutions with the right technology and engineering approach.</p>
+              <p>What began as a small development team focused on web applications quickly evolved into a growing software company delivering solutions across multiple industries and technology stacks.</p>
+              <p>Today, Suryaputri works with clients across India and international markets, building web platforms, mobile applications, SaaS products, AI-powered systems, and enterprise-grade software tailored to business needs.</p>
+              <p>Our focus remains the same — delivering clean engineering, transparent communication, and long-term value through technology.</p>
             </div>
           </div>
           <div ref={ref} className="grid grid-cols-2 gap-4">
             {[
-              { number: '2017', label: 'Founded' },
-              { number: '80+', label: 'Team Members' },
-              { number: '50+', label: 'Projects Shipped' },
-              { number: '3', label: 'Global Offices' },
+              { number: '2020', label: 'Founded' },
+              { number: '40+', label: 'Team Members' },
+              { number: '25+', label: 'Projects Shipped' },
+              { number: '1', label: 'Global Offices' },
             ].map((s, i) => (
               <div
                 key={s.label}

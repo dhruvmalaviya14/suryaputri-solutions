@@ -154,15 +154,14 @@ function ContactForm() {
 
 function ContactInfo() {
   const info = [
-    { icon: Mail, label: 'Email', value: 'hello@suryaputri.com', href: 'mailto:hello@suryaputri.com' },
-    { icon: Phone, label: 'Phone', value: '+91 80 1234 5678', href: 'tel:+918012345678' },
-    { icon: MapPin, label: 'Headquarters', value: 'Koramangala, Bangalore — 560034, India', href: '#' },
+    { icon: Mail, label: 'Email', value: 'info@suryaputrienterprise.in', href: 'mailto:info@suryaputrienterprise.in' },
+    { icon: Phone, label: 'Phone', value: '+91 7405266789', href: 'tel:+917405266789' },
+    { icon: MapPin, label: 'Headquarters', value: 'Kamrej-Surat, Gujarat, India 394180.', href: '#' },
     { icon: Clock, label: 'Response Time', value: 'Within 1 business day', href: null },
   ]
   const socials = [
-    { Icon: LinkedinIcon, href: '#', label: 'LinkedIn' },
-    { Icon: TwitterIcon, href: '#', label: 'Twitter' },
-    { Icon: GithubIcon, href: '#', label: 'GitHub' },
+    { Icon: LinkedinIcon, href: 'https://www.linkedin.com/in/suryaputri-solutions-834b1940b/', label: 'LinkedIn' },
+    { Icon: TwitterIcon, href: 'https://x.com/InfoSuryaputri', label: 'Twitter' },
   ]
 
   return (
@@ -194,6 +193,7 @@ function ContactInfo() {
             <a
               key={label}
               href={href}
+              target="_blank"
               aria-label={label}
               className="w-9 h-9 rounded-lg flex items-center justify-center border transition-all duration-200"
               style={{ borderColor: '#E5E1D8', color: '#8A96A3' }}
