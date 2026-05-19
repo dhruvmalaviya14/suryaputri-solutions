@@ -92,8 +92,8 @@ export default function Hero() {
 
                 <div className="space-y-4">
                   {[
-                    { label: 'Active Projects', value: '24', color: '#E8622A' },
-                    { label: 'Clients Served', value: '68+', color: '#3B6FE0' },
+                    { label: 'Active Projects', value: '8', color: '#E8622A' },
+                    { label: 'Clients Served', value: '25+', color: '#3B6FE0' },
                     { label: 'Uptime Avg.', value: '99.9%', color: '#10B981' },
                   ].map(item => (
                     <div key={item.label} className="flex items-center justify-between p-3 rounded-xl" style={{ background: '#F5F4F0' }}>

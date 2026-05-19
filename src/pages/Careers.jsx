@@ -130,12 +130,33 @@ function OpenPositions() {
         <SectionHeading
           badge="Open Roles"
           title={<>Current <span style={{ color: '#E8622A' }}>Openings</span></>}
-          subtitle="We are growing across engineering, design, and infrastructure. Every role offers real ownership and impact."
+          subtitle="We regularly look for talented people to join our team."
         />
-        <div ref={ref} className="space-y-3 max-w-3xl">
-          {openPositions.map((pos, i) => (
-            <PositionAccordion key={pos.id} position={pos} index={i} visible={visible} />
-          ))}
+        <div
+          ref={ref}
+          className="max-w-2xl mx-auto text-center rounded-2xl px-8 py-14"
+          style={{
+            background: 'white',
+            border: '1px solid #E5E1D8',
+            opacity: visible ? 1 : 0,
+            transform: visible ? 'translateY(0)' : 'translateY(20px)',
+            transition: 'all 0.6s ease',
+          }}
+        >
+          <div className="text-5xl mb-5">🔍</div>
+          <h3 className="font-display font-bold text-xl mb-3" style={{ color: '#1A1A2E' }}>
+            No Openings at This Time
+          </h3>
+          <p className="text-sm leading-relaxed" style={{ color: '#4A5568', maxWidth: '420px', margin: '0 auto' }}>
+            We don&apos;t have any open positions right now, but we&apos;re always interested in connecting with talented people. Feel free to reach out and introduce yourself — we&apos;d love to hear from you.
+          </p>
+          <a
+            href="/contact"
+            className="btn-primary text-sm inline-flex items-center gap-2 mt-6"
+            style={{ display: 'inline-flex' }}
+          >
+            Get in Touch
+          </a>
         </div>
       </div>
     </section>
