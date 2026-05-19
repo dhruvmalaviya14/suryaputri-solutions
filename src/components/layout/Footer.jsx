@@ -86,7 +86,7 @@ export default function Footer() {
               A modern software development company building scalable digital products and IT solutions for clients across industries and geographies.
             </p>
             <div className="mt-6 space-y-2.5">
-              <a href="mailto:hello@suryaputri.com" className="flex items-center gap-2.5 text-sm transition-colors" style={{ color: 'rgba(255,255,255,0.5)' }}
+              <a href="mailto:info@suryaputrienterprise.in" className="flex items-center gap-2.5 text-sm transition-colors" style={{ color: 'rgba(255,255,255,0.5)' }}
                 onMouseEnter={e => e.currentTarget.style.color = '#E8622A'}
                 onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.5)'}
               >
@@ -130,7 +130,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t" style={{ borderColor: 'rgba(255,255,255,0.08)' }}>
           <p className="text-xs" style={{ color: 'rgba(255,255,255,0.35)' }}>
-            © {new Date().getFullYear()} Suryaputri Technologies Pvt. Ltd. All rights reserved.
+            © {new Date().getFullYear()} Suryaputri Enterprise All rights reserved.
           </p>
           <div className="flex items-center gap-3">
             {socials.map(({ Icon, href, label }) => (
