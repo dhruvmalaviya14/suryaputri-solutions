@@ -71,7 +71,7 @@ export default function Footer() {
             </h3>
           </div>
           <Link to="/contact" className="btn-primary whitespace-nowrap flex-shrink-0">
-            Start a Project <ArrowRight size={16} />
+            Start a Project<ArrowRight size={16} />
           </Link>
         </div>
       </div>
