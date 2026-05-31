@@ -76,7 +76,7 @@ export default function Navbar() {
               ))}
             </nav>
 
-            {/* Desktop CTA */}
+            {/* Desktop CTA  */}
             <div className="hidden lg:flex items-center gap-3">
               <Link
                 to="/contact"

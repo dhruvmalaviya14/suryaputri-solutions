@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 import { ArrowRight, Mail, Phone, MapPin } from 'lucide-react'
 import Logo from '../ui/Logo'
 
-// Inline SVG social icons (lucide-react v1 removed social icons)
+// Inline SVG social icons(lucide-react v1 removed social icons)
 function LinkedinIcon({ size = 14 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
