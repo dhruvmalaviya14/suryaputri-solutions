@@ -12,6 +12,7 @@ import Careers from './pages/Careers'
 import Insights from './pages/Insights'
 import BlogPost from './pages/BlogPost'
 import Contact from './pages/Contact'
+import MineChain from './pages/MineChain'
 
 function ScrollRestorer() {
   const { pathname } = useLocation()
@@ -37,6 +38,7 @@ export default function App() {
           <Route path="/insights" element={<Insights />} />
           <Route path="/insights/:id" element={<BlogPost />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/minechain" element={<MineChain />} />
         </Routes>
       </main>
       <Footer />

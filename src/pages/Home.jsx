@@ -2,7 +2,7 @@ import Hero from '../components/home/Hero'
 import TrustedBy from '../components/home/TrustedBy'
 import CompanyIntro from '../components/home/CompanyIntro'
 import ServicesOverview from '../components/home/ServicesOverview'
-import TechStack from '../components/home/TechStack'
+import AWSArchitecture from '../components/home/AWSArchitecture'
 import FeaturedProjects from '../components/home/FeaturedProjects'
 import Industries from '../components/home/Industries'
 import Process from '../components/home/Process'
@@ -19,7 +19,7 @@ export default function Home() {
       <TrustedBy />
       <CompanyIntro />
       <ServicesOverview />
-      <TechStack />
+      <AWSArchitecture />
       <FeaturedProjects />
       <Industries />
       <Process />

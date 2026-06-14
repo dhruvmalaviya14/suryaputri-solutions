@@ -1,9 +1,10 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Play, CheckCircle } from 'lucide-react'
+import { ArrowRight, CheckCircle } from 'lucide-react'
 
 const highlights = [
-  '40+ Engineers',
-  '25+ Projects Delivered',
+  'AWS-Native Architecture',
+  '9 AWS Services Integrated',
+  'Mining Compliance Focus',
 ]
 
 export default function Hero() {
@@ -30,22 +31,22 @@ export default function Hero() {
           {/* Left content */}
           <div>
             <div className="badge mb-6 animate-fade-in">
-              ✦ &nbsp;Software Development Company
+              ⛏️ &nbsp;Mining Intelligence Platform
             </div>
 
             <h1
               className="font-display font-bold leading-none mb-6"
               style={{ fontSize: 'clamp(2.4rem, 5vw, 4rem)', letterSpacing: '-0.03em', color: '#1A1A2E' }}
             >
-              We Build Digital Products
+              India's Mining
               {' '}
-              <span style={{ color: '#E8622A' }}>That Scale</span>
+              <span style={{ color: '#E8622A' }}>Compliance &</span>
               {' '}
-              and Perform.
+              Intelligence Platform.
             </h1>
 
             <p className="text-base md:text-lg leading-relaxed mb-8" style={{ color: '#4A5568', maxWidth: '480px' }}>
-              Suryaputri partners with ambitious businesses to engineer web applications, mobile apps, AI solutions, and cloud infrastructure — from MVP to enterprise scale.
+              Suryaputri is building <strong>MineChain</strong> — an AI-powered platform for mining operators and state governments to manage GPS tracking, royalty compliance, blockchain audit trails, and regulatory intelligence in one system.
             </p>
 
             <div className="flex flex-wrap gap-3 mb-10">
@@ -62,16 +63,16 @@ export default function Hero() {
             </div>
 
             <div className="flex flex-wrap gap-3">
-              <Link to="/projects" className="btn-primary">
-                View Our Work <ArrowRight size={15} />
+              <Link to="/minechain" className="btn-primary">
+                Explore MineChain <ArrowRight size={15} />
               </Link>
               <Link to="/contact" className="btn-secondary">
-                Talk to Us
+                Request a Demo
               </Link>
             </div>
           </div>
 
-          {/* Right visual */}
+          {/* Right visual — Live MineChain Dashboard mockup */}
           <div className="relative hidden lg:block">
             <div className="relative">
               {/* Main card */}
@@ -87,36 +88,41 @@ export default function Hero() {
                   <div className="w-3 h-3 rounded-full" style={{ background: '#FF6058' }} />
                   <div className="w-3 h-3 rounded-full" style={{ background: '#FEBC2E' }} />
                   <div className="w-3 h-3 rounded-full" style={{ background: '#28C840' }} />
-                  <div className="flex-1 mx-4 h-7 rounded-lg" style={{ background: '#F5F4F0' }} />
+                  <div className="flex-1 mx-4 h-7 rounded-lg flex items-center px-3" style={{ background: '#F5F4F0' }}>
+                    <span style={{ fontSize: '10px', color: '#8A96A3', fontFamily: 'monospace' }}>minechain.suryaputrienterprise.in</span>
+                  </div>
                 </div>
 
-                <div className="space-y-4">
+                <div className="space-y-3">
                   {[
-                    { label: 'Active Projects', value: '8', color: '#E8622A' },
-                    { label: 'Clients Served', value: '25+', color: '#3B6FE0' },
-                    { label: 'Uptime Avg.', value: '99.9%', color: '#10B981' },
+                    { label: 'Active Vehicles', value: '62', color: '#E8622A', icon: '🚛' },
+                    { label: 'Royalty This Month', value: '₹28 L', color: '#3B6FE0', icon: '💰' },
+                    { label: 'Compliance Score', value: '97.4%', color: '#10B981', icon: '✅' },
+                    { label: 'AI Alerts Today', value: '2 New', color: '#F59E0B', icon: '🤖' },
                   ].map(item => (
                     <div key={item.label} className="flex items-center justify-between p-3 rounded-xl" style={{ background: '#F5F4F0' }}>
-                      <span className="text-sm font-medium" style={{ color: '#4A5568' }}>{item.label}</span>
-                      <span className="text-lg font-bold font-display" style={{ color: item.color }}>{item.value}</span>
+                      <span className="text-sm font-medium flex items-center gap-2" style={{ color: '#4A5568' }}>
+                        <span>{item.icon}</span>{item.label}
+                      </span>
+                      <span className="text-base font-bold font-display" style={{ color: item.color }}>{item.value}</span>
                     </div>
                   ))}
                 </div>
 
-                <div className="mt-6 p-4 rounded-2xl" style={{ background: '#FEF3EE', border: '1px solid rgba(232,98,42,0.15)' }}>
+                <div className="mt-5 p-4 rounded-2xl" style={{ background: '#FEF3EE', border: '1px solid rgba(232,98,42,0.15)' }}>
                   <div className="flex items-center gap-3">
                     <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: '#E8622A' }}>
-                      <span className="text-white text-lg font-bold">🚀</span>
+                      <span className="text-white text-lg font-bold">🤖</span>
                     </div>
                     <div>
-                      <p className="text-xs font-semibold" style={{ color: '#E8622A' }}>LATEST LAUNCH</p>
-                      <p className="text-sm font-semibold" style={{ color: '#1A1A2E' }}>Salon Booking — Live</p>
+                      <p className="text-xs font-semibold" style={{ color: '#E8622A' }}>AI COMPLIANCE ALERT</p>
+                      <p className="text-sm font-semibold" style={{ color: '#1A1A2E' }}>New Gujarat royalty rate — 3 mines affected</p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              {/* Floating badge */}
+              {/* Floating badge — Blockchain */}
               <div
                 className="absolute -bottom-5 -left-8 px-4 py-3 rounded-2xl flex items-center gap-3"
                 style={{
@@ -126,11 +132,11 @@ export default function Hero() {
                 }}
               >
                 <div className="w-8 h-8 rounded-lg flex items-center justify-center" style={{ background: '#EEF3FD' }}>
-                  <span style={{ fontSize: '16px' }}>⭐</span>
+                  <span style={{ fontSize: '16px' }}>🔗</span>
                 </div>
                 <div>
-                  <p className="text-xs font-bold" style={{ color: '#1A1A2E' }}>96% Satisfaction</p>
-                  <p className="text-xs" style={{ color: '#8A96A3' }}>Across all projects</p>
+                  <p className="text-xs font-bold" style={{ color: '#1A1A2E' }}>Blockchain Verified</p>
+                  <p className="text-xs" style={{ color: '#8A96A3' }}>318 records today</p>
                 </div>
               </div>
 
@@ -140,7 +146,7 @@ export default function Hero() {
                 style={{ background: '#1E2D3D', boxShadow: '0 4px 16px rgba(30,45,61,0.25)' }}
               >
                 <p className="text-xs font-mono" style={{ color: 'rgba(255,255,255,0.7)' }}>
-                  <span style={{ color: '#E8622A' }}>React</span> · <span style={{ color: '#60A5FA' }}>Node</span> · <span style={{ color: '#10B981' }}>AWS</span>
+                  <span style={{ color: '#E8622A' }}>Kinesis</span> · <span style={{ color: '#60A5FA' }}>Bedrock</span> · <span style={{ color: '#10B981' }}>Blockchain</span>
                 </p>
               </div>
             </div>
@@ -153,10 +159,10 @@ export default function Hero() {
           style={{ borderColor: '#E5E1D8' }}
         >
           {[
-            { number: '40+', label: 'Team Members' },
-            { number: '25+', label: 'Projects Shipped' },
-            { number: '4+', label: 'Years in Business' },
-            { number: '2', label: 'Continents Served' },
+            { number: '80+', label: 'Mines Addressable' },
+            { number: '9+', label: 'AWS Services Used' },
+            { number: '₹150 Cr+', label: 'Royalty Tracked Annually' },
+            { number: '3', label: 'Target States (Phase 1)' },
           ].map(stat => (
             <div key={stat.label}>
               <div className="font-display font-bold text-3xl md:text-4xl" style={{ color: '#E8622A', letterSpacing: '-0.03em' }}>

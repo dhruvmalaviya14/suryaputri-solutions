@@ -61,31 +61,32 @@ export const timeline = [
   {
     year: '2020',
     title: 'Company Founded',
-    description: 'Vijay and Ravi started Suryaputri with a small team focused on practical web solutions for local businesses.',
+    description: 'Vijay and Ravi started Suryaputri with a clear mission: build technology that solves real problems for real industries.',
   },
   {
     year: '2021',
-    title: 'First Client Projects',
-    description: 'Delivered early websites and small business tools, building trust through clear communication and on-time delivery.',
+    title: 'Mining Industry Research Begins',
+    description: 'After client engagements with mining operators, the team identified a massive gap — no platform existed to solve GPS tracking, royalty management, and compliance in one place.',
   },
   {
     year: '2022',
-    title: 'Team Expansion',
-    description: 'Grew the development team and added mobile app and UI design capabilities to serve more project types.',
+    title: 'Cloud & AI Capability Building',
+    description: 'Invested deeply in AWS architecture, AI/ML, and blockchain technology — building the engineering foundation for what would become MineChain.',
   },
   {
     year: '2023',
-    title: 'Broader Service Offerings',
-    description: 'Expanded into booking systems, dashboards, and custom tools for retail, education, and service businesses.',
+    title: 'MineChain Concept Validated',
+    description: 'Initial conversations with mining operators in Gujarat confirmed the market need. Began designing the 8-module MineChain platform architecture on AWS.',
   },
   {
     year: '2024',
-    title: '25+ Projects Completed',
-    description: 'Reached a steady portfolio of shipped projects with repeat clients and improved delivery processes.',
+    title: 'First Prototypes Built',
+    description: 'GPS Vehicle Tracking and AI Royalty Calculator prototypes went live. Amazon Managed Blockchain integration completed for tamper-proof audit trails.',
   },
   {
-    year: '2025',
-    title: 'Growing Client Base',
-    description: 'Continued work with businesses across India while improving code quality, documentation, and support.',
+    year: '2025–26',
+    title: 'MineChain Platform Launch',
+    description: 'Full platform development underway. Onboarding pilot mining operators across Gujarat, Rajasthan, and Maharashtra. AWS-native architecture deployed across 9 services.',
   },
 ]
+

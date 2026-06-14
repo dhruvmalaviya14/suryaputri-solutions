@@ -31,16 +31,16 @@ function PageHero() {
   return (
     <section className="pt-32 pb-20 px-4" style={{ background: 'linear-gradient(160deg, #FAFAF8 0%, #F5F4F0 100%)' }}>
       <div className="max-w-4xl mx-auto text-center">
-        <span className="badge mb-6 mx-auto">Get in Touch</span>
+        <span className="badge mb-6 mx-auto">Get In Touch</span>
         <h1
           className="font-display font-bold mb-6"
           style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#1A1A2E', letterSpacing: '-0.03em', lineHeight: '1.1' }}
         >
-          Let's Talk About Your{' '}
-          <span style={{ color: '#E8622A' }}>Next Project</span>
+          Request a{' '}
+          <span style={{ color: '#E8622A' }}>MineChain Demo</span>
         </h1>
         <p className="text-base md:text-lg leading-relaxed mx-auto" style={{ color: '#4A5568', maxWidth: '540px' }}>
-          Whether you have a detailed brief or just an idea — we would love to hear from you. Most projects start with a conversation.
+          Interested in MineChain for your mining operation or government department? We are actively onboarding pilot customers for Phase 1 rollout across Gujarat, Rajasthan, and Maharashtra.
         </p>
       </div>
     </section>
@@ -86,16 +86,29 @@ function ContactForm() {
     )
   }
 
+
+  const serviceOptions = [
+    'MineChain — GPS Vehicle Tracking Module',
+    'MineChain — Royalty Management Module',
+    'MineChain — AI Compliance Engine',
+    'MineChain — Blockchain Audit Layer',
+    'MineChain — Production Monitoring',
+    'MineChain — Permit & License Management',
+    'MineChain — Government Dashboard',
+    'MineChain — Full Platform (All Modules)',
+    'Pilot Programme Application',
+    'Partnership / Integration Enquiry',
+    'Other',
+  ]
+
   const fields = [
     { id: 'name', label: 'Full Name', type: 'text', placeholder: 'Your full name', half: true },
     { id: 'email', label: 'Work Email', type: 'email', placeholder: 'you@company.com', half: true },
-    { id: 'company', label: 'Company (optional)', type: 'text', placeholder: 'Company name', half: true },
-    { id: 'service', label: 'Service Needed', type: 'select', placeholder: 'Select a service', half: true, options: [
-      'Web Development', 'Mobile App Development', 'MERN Stack', 'UI/UX Design',
-      'AI/ML Solutions', 'Cloud & DevOps', 'E-Commerce', 'SaaS Development', 'Other',
-    ]},
-    { id: 'message', label: 'Tell Us About Your Project', type: 'textarea', placeholder: 'Describe your project, goals, timeline, and any specific requirements...', half: false },
+    { id: 'company', label: 'Company / Mine Name', type: 'text', placeholder: 'Your company or mine name', half: true },
+    { id: 'service', label: 'MineChain Module Interest', type: 'select', placeholder: 'Select a module or enquiry type', half: true, options: serviceOptions },
+    { id: 'message', label: 'Tell Us About Your Operations', type: 'textarea', placeholder: 'Describe your mining operations, number of vehicles, current challenges, and what you are looking to solve...', half: false },
   ]
+
 
   return (
     <div className="card p-8">
@@ -154,7 +167,7 @@ function ContactForm() {
 
 function ContactInfo() {
   const info = [
-    { icon: Mail, label: 'Email', value: 'info@suryaputrienterprise.in', href: 'mailto:info@suryaputrienterprise.in' },
+    { icon: Mail, label: 'Email', value: 'admin@suryaputrienterprise.in', href: 'mailto:admin@suryaputrienterprise.in' },
     { icon: Phone, label: 'Phone', value: '+91 7405266789', href: 'tel:+917405266789' },
     { icon: MapPin, label: 'Headquarters', value: 'Kamrej-Surat, Gujarat, India 394180.', href: '#' },
     { icon: Clock, label: 'Response Time', value: 'Within 1 business day', href: null },

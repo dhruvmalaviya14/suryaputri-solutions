@@ -5,12 +5,12 @@ import Logo from '../ui/Logo'
 
 const navLinks = [
   { to: '/', label: 'Home' },
+  { to: '/minechain', label: '⛏️ MineChain' },
   { to: '/about', label: 'About' },
-  { to: '/services', label: 'Services' },
-  { to: '/technologies', label: 'Technologies' },
-  { to: '/projects', label: 'Projects' },
+  { to: '/services', label: 'Modules' },
+  { to: '/projects', label: 'Prototypes' },
   { to: '/insights', label: 'Insights' },
-  { to: '/careers', label: 'Careers' },
+  { to: '/contact', label: 'Contact' },
 ]
 
 function NavLogo() {
@@ -82,7 +82,7 @@ export default function Navbar() {
                 to="/contact"
                 className="btn-primary text-sm px-5 py-2.5"
               >
-                Start a Project
+                Request Demo
                 <ArrowRight size={14} />
               </Link>
             </div>
@@ -141,7 +141,7 @@ export default function Navbar() {
           ))}
           <div className="mt-4 pt-4 border-t" style={{ borderColor: '#E5E1D8' }}>
             <Link to="/contact" className="btn-primary w-full justify-center">
-              Start a Project <ArrowRight size={14} />
+              Request Demo <ArrowRight size={14} />
             </Link>
           </div>
         </nav>

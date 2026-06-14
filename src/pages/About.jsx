@@ -39,18 +39,18 @@ function Story() {
               title={<>From a 3-Person Team to an Engineering <span style={{ color: '#E8622A' }}>Powerhouse</span></>}
             />
             <div className="space-y-4 text-sm leading-relaxed" style={{ color: '#4A5568' }}>
-              <p>Founded in 2020 by Vijay Savani and Ravi Savani, Suryaputri was started with a simple vision — to help businesses build modern, scalable, and reliable digital solutions with the right technology and engineering approach.</p>
-              <p>What began as a small development team focused on web applications quickly evolved into a growing software company delivering solutions across multiple industries and technology stacks.</p>
-              <p>Today, Suryaputri works with clients across India and international markets, building web platforms, mobile applications, SaaS products, AI-powered systems, and enterprise-grade software tailored to business needs.</p>
-              <p>Our focus remains the same — delivering clean engineering, transparent communication, and long-term value through technology.</p>
+              <p>Founded in 2020 by Vijay Savani and Ravi Savani, Suryaputri began with a clear mission — to solve real, high-impact problems with technology. After working with clients across industries, the founders identified one sector where digitization was critically missing: mining.</p>
+              <p>India's mining industry — worth lakhs of crores in annual royalty — still operates on paper challans, manual royalty ledgers, and phone-call coordination. Fraud, compliance failures, and illegal extraction cost state governments hundreds of crores every year.</p>
+              <p>In 2023, Suryaputri began building <strong>MineChain</strong> — an AWS-native platform combining real-time GPS tracking, AI-powered compliance, automatic royalty calculation, and blockchain audit trails into one integrated system for mining operators and government departments.</p>
+              <p>Today, MineChain is in active development with prototypes live and pilot operators being onboarded across Gujarat, Rajasthan, and Maharashtra. The platform is built on 9 AWS services and designed to scale to national level.</p>
             </div>
           </div>
           <div ref={ref} className="grid grid-cols-2 gap-4">
             {[
               { number: '2020', label: 'Founded' },
-              { number: '40+', label: 'Team Members' },
-              { number: '25+', label: 'Projects Shipped' },
-              { number: '1', label: 'Global Offices' },
+              { number: '9+', label: 'AWS Services Used' },
+              { number: '80+', label: 'Mines Addressable' },
+              { number: '3', label: 'Target States' },
             ].map((s, i) => (
               <div
                 key={s.label}
@@ -76,12 +76,12 @@ function Story() {
 function Values() {
   const [ref, visible] = useScrollAnimation()
   const values = [
-    { title: 'Mission', desc: 'To be the most trusted engineering partner for companies building meaningful digital products — from MVP to enterprise scale.', icon: '🎯' },
-    { title: 'Vision', desc: 'A world where every ambitious company has access to senior engineering talent and the processes that consistently deliver great software.', icon: '🔭' },
-    { title: 'Integrity', desc: 'We tell clients what they need to hear, not what they want to hear. Honest assessments, transparent pricing, and no surprise changes.', icon: '⚖️' },
-    { title: 'Excellence', desc: 'We hold ourselves to a standard of craft — in code, in design, in communication. Good enough is never good enough.', icon: '✦' },
-    { title: 'Partnership', desc: 'We do not take projects — we take on missions. When you succeed, we succeed. That alignment drives everything we do.', icon: '🤝' },
-    { title: 'Learning', desc: 'Technology moves fast. We invest in continuous learning — conference budgets, internal knowledge shares, and research time.', icon: '📖' },
+    { title: 'Mission', desc: 'To digitize India\'s mining industry with an AI-powered platform that makes compliance automatic, royalty transparent, and fraud structurally impossible.', icon: '🎯' },
+    { title: 'Vision', desc: 'A future where every mine in India operates on tamper-proof digital records, AI reads regulatory changes the same day they are issued, and government departments have real-time visibility.', icon: '🔭' },
+    { title: 'Integrity', desc: 'Blockchain-backed transparency is not just a product feature — it is how we operate. Honest assessments, clear pricing, and no hidden changes.', icon: '⚖️' },
+    { title: 'Industry Focus', desc: 'We chose mining specifically because it is underserved, high-impact, and critical to India\'s infrastructure. Deep domain expertise drives better software decisions.', icon: '⛏️' },
+    { title: 'AWS-First Engineering', desc: 'Every MineChain module is built on AWS-native services — Kinesis, Bedrock, Managed Blockchain, EMR — for true enterprise scalability and reliability.', icon: '☁️' },
+    { title: 'Government Partnership', desc: 'We believe the government dashboard is where MineChain becomes transformational. State mining departments need better tools. We are building them.', icon: '🏛️' },
   ]
 
   return (
@@ -185,12 +185,15 @@ function Team() {
 
 function Achievements() {
   const achievements = [
-    '🏆 ISO 27001 Certified (2023)',
-    '🌍 Clients in 12+ countries',
-    '⭐ 96% client satisfaction rate',
-    '🔁 80% repeat business rate',
-    '📦 Zero project abandonments since founding',
-    '🎓 50+ engineers trained and mentored',
+    '🏆 AWS-Native Architecture — 9 Services',
+    '🛰️ GPS Tracking Prototype: Live',
+    '🤖 AI Compliance Engine: In Development',
+    '🔗 Amazon Managed Blockchain: Integrated',
+    '📊 80+ Mines Addressable Market (Phase 1)',
+    '🌍 3 States: Gujarat, Rajasthan, Maharashtra',
+    '💰 ₹150 Cr+ Annual Royalty Trackable',
+    '🏛️ Government Dashboard: Planned',
+    '📦 8 Platform Modules in MineChain',
   ]
   const [ref, visible] = useScrollAnimation()
 

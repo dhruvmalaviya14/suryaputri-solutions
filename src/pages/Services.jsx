@@ -1,26 +1,30 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Globe, Smartphone, Code2, Palette, Brain, Cloud, ShoppingCart, Layers, Plug, Wrench, ArrowRight, CheckCircle } from 'lucide-react'
+import {
+  Truck, BarChart3, IndianRupee, Link as LinkIcon,
+  Brain, FileCheck, TrendingUp, Building2,
+  ArrowRight, CheckCircle
+} from 'lucide-react'
 import SectionHeading from '../components/ui/SectionHeading'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { services } from '../data/services'
 
-const iconMap = { Globe, Smartphone, Code2, Palette, Brain, Cloud, ShoppingCart, Layers, Plug, Wrench }
+const iconMap = { Truck, BarChart3, IndianRupee, Link: LinkIcon, Brain, FileCheck, TrendingUp, Building2 }
 
 function PageHero() {
   return (
     <section className="pt-32 pb-20 px-4" style={{ background: 'linear-gradient(160deg, #FAFAF8 0%, #F5F4F0 100%)' }}>
       <div className="max-w-4xl mx-auto text-center">
-        <span className="badge mb-6 mx-auto">What We Offer</span>
+        <span className="badge mb-6 mx-auto">⛏️ Platform Modules</span>
         <h1
           className="font-display font-bold mb-6"
           style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#1A1A2E', letterSpacing: '-0.03em', lineHeight: '1.1' }}
         >
-          Services That Cover the{' '}
-          <span style={{ color: '#E8622A' }}>Full Product Lifecycle</span>
+          MineChain Platform{' '}
+          <span style={{ color: '#E8622A' }}>Module Overview</span>
         </h1>
-        <p className="text-base md:text-lg leading-relaxed mx-auto" style={{ color: '#4A5568', maxWidth: '560px' }}>
-          From first-line discovery to post-launch support, we offer every engineering and design service your product needs to succeed.
+        <p className="text-base md:text-lg leading-relaxed mx-auto" style={{ color: '#4A5568', maxWidth: '600px' }}>
+          Eight integrated modules covering every dimension of mining operations — from real-time GPS tracking to AI-powered regulatory compliance and blockchain audit trails. All built on AWS-native architecture.
         </p>
       </div>
     </section>
@@ -55,6 +59,19 @@ function ServiceCard({ service, index, visible }) {
         </div>
       </div>
 
+      {/* AWS Services badges */}
+      <div className="flex flex-wrap gap-1.5 mb-4">
+        {service.awsServices.map(aws => (
+          <span
+            key={aws}
+            className="text-xs font-medium px-2 py-0.5 rounded-md"
+            style={{ background: '#FFF8F0', color: '#FF9900', border: '1px solid rgba(255,153,0,0.2)' }}
+          >
+            ☁️ {aws}
+          </span>
+        ))}
+      </div>
+
       <div className="flex flex-wrap gap-1.5 mb-4">
         {service.features.slice(0, 3).map(f => (
           <span key={f} className="flex items-center gap-1 text-xs" style={{ color: '#4A5568' }}>
@@ -74,7 +91,7 @@ function ServiceCard({ service, index, visible }) {
             ))}
           </div>
           <div>
-            <p className="text-xs font-semibold mb-2" style={{ color: '#1A1A2E' }}>Process</p>
+            <p className="text-xs font-semibold mb-2" style={{ color: '#1A1A2E' }}>Implementation Process</p>
             <div className="flex flex-wrap gap-2">
               {service.process.map((step, i) => (
                 <span key={step} className="flex items-center gap-1 text-xs" style={{ color: '#8A96A3' }}>
@@ -99,7 +116,7 @@ function ServiceCard({ service, index, visible }) {
           onMouseEnter={e => e.currentTarget.style.color = '#E8622A'}
           onMouseLeave={e => e.currentTarget.style.color = '#8A96A3'}
         >
-          Get a Quote <ArrowRight size={11} />
+          Request Demo <ArrowRight size={11} />
         </Link>
       </div>
     </div>
@@ -115,9 +132,9 @@ export default function Services() {
       <section className="section" style={{ background: '#F5F4F0' }}>
         <div className="container-custom">
           <SectionHeading
-            badge="Services"
-            title="Everything You Need, Under One Roof"
-            subtitle="We handle the full engineering spectrum so you do not have to manage multiple vendors."
+            badge="Full Platform"
+            title="All 8 MineChain Modules"
+            subtitle="Each module is independently deployable but architecturally integrated — operators can start with GPS tracking and add compliance, royalty, and blockchain modules as they scale."
             center
           />
           <div ref={ref} className="grid md:grid-cols-2 gap-5">
@@ -131,10 +148,14 @@ export default function Services() {
             className="mt-14 rounded-3xl p-10 text-center"
             style={{ background: '#1A1A2E' }}
           >
-            <h3 className="font-display font-bold text-2xl mb-3" style={{ color: 'white', letterSpacing: '-0.02em' }}>Not sure which service you need?</h3>
-            <p className="text-sm mb-6" style={{ color: 'rgba(255,255,255,0.55)' }}>Book a free 30-minute discovery call and we will recommend the right approach for your product.</p>
+            <h3 className="font-display font-bold text-2xl mb-3" style={{ color: 'white', letterSpacing: '-0.02em' }}>
+              Ready to digitize your mining operations?
+            </h3>
+            <p className="text-sm mb-6" style={{ color: 'rgba(255,255,255,0.55)' }}>
+              Book a free 30-minute demo and we'll walk you through the MineChain modules most relevant to your operations.
+            </p>
             <Link to="/contact" className="btn-primary">
-              Book Discovery Call <ArrowRight size={15} />
+              Book a Demo <ArrowRight size={15} />
             </Link>
           </div>
         </div>

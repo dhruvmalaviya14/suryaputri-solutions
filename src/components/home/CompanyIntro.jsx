@@ -1,12 +1,12 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Shield, Zap, Users } from 'lucide-react'
+import { ArrowRight, Satellite, Shield, BarChart3 } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 const pillars = [
-  { icon: Zap, title: 'Speed Without Shortcuts', desc: 'We move fast by building right. Clean architecture means faster iterations and fewer bugs over time.' },
-  { icon: Shield, title: 'Enterprise-Grade Security', desc: 'ISO 27001 certified. Every system we build is designed with security at the architecture level.' },
-  { icon: Users, title: 'Long-Term Partnership', desc: '80% of our business comes from repeat clients. We invest in relationships, not just projects.' },
+  { icon: Satellite, title: 'Real-Time GPS Intelligence', desc: 'Every mining vehicle tracked live via Amazon Kinesis streams. Geofencing, route compliance, and unauthorized movement alerts in real-time.' },
+  { icon: Shield, title: 'Regulatory Compliance, Automated', desc: 'AI reads government circulars, detects policy changes, and generates action checklists — so operators are never caught by a new regulation.' },
+  { icon: BarChart3, title: 'Blockchain-Backed Audit Trail', desc: 'Every trip, production record, and royalty payment immutably stored on Amazon Managed Blockchain. Zero fraud. Instant government audits.' },
 ]
 
 export default function CompanyIntro() {
@@ -19,12 +19,12 @@ export default function CompanyIntro() {
           {/* Left */}
           <div>
             <SectionHeading
-              badge="About Suryaputri"
-              title={<>Engineering Partner for <span style={{ color: '#E8622A' }}>Ambitious Companies</span></>}
-              subtitle="We are a software development company that works as a true engineering partner — embedded with your team, invested in your outcomes, and built to deliver."
+              badge="About MineChain"
+              title={<>The Operating System for <span style={{ color: '#E8622A' }}>India's Mining Industry</span></>}
+              subtitle="MineChain is Suryaputri's flagship product — an end-to-end digital platform that connects mining operators, transport fleets, royalty departments, and state governments on a single, AWS-native intelligence layer."
             />
-            <Link to="/about" className="btn-secondary mt-2">
-              Our Story <ArrowRight size={14} />
+            <Link to="/minechain" className="btn-secondary mt-2">
+              See How It Works <ArrowRight size={14} />
             </Link>
           </div>
 

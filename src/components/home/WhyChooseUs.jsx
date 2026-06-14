@@ -3,12 +3,12 @@ import { CheckCircle } from 'lucide-react'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 const reasons = [
-  { title: 'Senior Engineers on Every Project', desc: 'No bait-and-switch. You get senior engineers assigned to your project from day one — not juniors supervised from a distance.' },
-  { title: 'Transparent Communication', desc: 'Daily standups, weekly demos, and a dedicated Slack channel. You always know exactly where your project stands.' },
-  { title: 'Fixed-Price & Time-Material Options', desc: 'We offer both engagement models with clear, upfront pricing. No surprise invoices.' },
-  { title: 'Domain-Aware Development', desc: 'We study your industry before we start. Financial compliance, healthcare data regulations, e-commerce patterns — we bring domain knowledge to the table.' },
-  { title: 'Code You Own Completely', desc: 'All intellectual property is transferred to you at project completion. Full source code, documentation, and deployment guides.' },
-  { title: 'Proven Track Record', desc: '96% client satisfaction. 80% repeat business rate. 50+ projects delivered since 2017 with zero project abandonments.' },
+  { title: 'Only End-to-End Mining Platform in India', desc: 'Competitors offer vehicle tracking only. MineChain combines GPS, royalty management, blockchain audit, AI compliance, and government dashboards — the complete stack.' },
+  { title: 'AWS-Native Architecture from Day One', desc: 'Built on Amazon Kinesis, Bedrock, Managed Blockchain, EMR, and DynamoDB — MineChain naturally scales to thousands of mines and millions of daily GPS events.' },
+  { title: 'AI That Reads Government Circulars', desc: 'Powered by Amazon Bedrock, the compliance engine parses new government mining notifications automatically, identifies affected operators, and generates action checklists in minutes.' },
+  { title: 'Tamper-Proof Blockchain Audit Trail', desc: 'Every trip, production record, and royalty payment is immutably stored on Amazon Managed Blockchain — eliminating the fraud and data manipulation that plagues the industry.' },
+  { title: 'Government as a Future Customer', desc: 'The Government Monitoring Dashboard positions MineChain as a B2G product too — state mining departments can monitor entire jurisdictions, making this a platform play, not just a SaaS tool.' },
+  { title: 'Scalable to National Level', desc: 'Phase 1 targets Gujarat, Rajasthan, and Maharashtra. The AWS architecture supports all 28 states without re-engineering. One platform, national scale.' },
 ]
 
 export default function WhyChooseUs() {
@@ -19,9 +19,9 @@ export default function WhyChooseUs() {
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-16 items-start">
           <SectionHeading
-            badge="Why Suryaputri"
-            title={<>What Makes Us Different From the Rest</>}
-            subtitle="The software industry is full of agencies. We are a product engineering partner — and that distinction matters."
+            badge="Why MineChain Wins"
+            title={<>What Makes MineChain Different from Everything Else</>}
+            subtitle="The mining industry has GPS trackers. It has manual royalty ledgers. It has paper permits. MineChain replaces all of them with one intelligent, AWS-powered operating system."
           />
           <div ref={ref} className="space-y-5">
             {reasons.map((r, i) => (

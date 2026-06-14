@@ -1,15 +1,15 @@
 import { Link } from 'react-router-dom'
-import { ArrowRight, Globe, Smartphone, Code2, Palette, Brain, Cloud } from 'lucide-react'
+import { ArrowRight, Truck, BarChart3, IndianRupee, Link as LinkIcon, Brain, FileCheck } from 'lucide-react'
 import SectionHeading from '../ui/SectionHeading'
 import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
-const services = [
-  { icon: Globe, title: 'Web Development', desc: 'High-performance web apps built with React, Next.js, and Node.js. From SPAs to enterprise platforms.', color: '#E8622A', bg: '#FEF3EE' },
-  { icon: Smartphone, title: 'Mobile Apps', desc: 'Cross-platform React Native and Flutter apps with native-quality performance on iOS and Android.', color: '#3B6FE0', bg: '#EEF3FD' },
-  { icon: Code2, title: 'MERN Stack', desc: 'End-to-end JavaScript solutions with MongoDB, Express, React, and Node.js — our core expertise.', color: '#E8622A', bg: '#FEF3EE' },
-  { icon: Palette, title: 'UI/UX Design', desc: 'User research, wireframing, and pixel-perfect Figma designs grounded in usability principles.', color: '#3B6FE0', bg: '#EEF3FD' },
-  { icon: Brain, title: 'AI/ML Solutions', desc: 'Custom ML models, LLM integrations, and AI-powered product features that create real business value.', color: '#E8622A', bg: '#FEF3EE' },
-  { icon: Cloud, title: 'Cloud & DevOps', desc: 'AWS, GCP, Docker, Kubernetes — reliable infrastructure and CI/CD pipelines for seamless delivery.', color: '#3B6FE0', bg: '#EEF3FD' },
+const modules = [
+  { icon: Truck, title: 'Live Vehicle Tracking', desc: 'Real-time GPS tracking of mining vehicles via Amazon Kinesis. Geofencing, route compliance, and unauthorized movement alerts.', color: '#E8622A', bg: '#FEF3EE', aws: 'Kinesis + Lambda' },
+  { icon: BarChart3, title: 'Production Monitoring', desc: 'Material extracted and transported tracked in real-time. Daily production reports and site productivity dashboards via EMR.', color: '#3B6FE0', bg: '#EEF3FD', aws: 'EMR + S3' },
+  { icon: IndianRupee, title: 'Royalty Management', desc: 'Automatic royalty calculations based on government mineral rates. AI reads circulars and updates rates instantly.', color: '#E8622A', bg: '#FEF3EE', aws: 'Bedrock + RDS' },
+  { icon: LinkIcon, title: 'Blockchain Audit Layer', desc: 'Tamper-proof storage of transport, production, and royalty records on Amazon Managed Blockchain. Zero fraud. Instant audits.', color: '#3B6FE0', bg: '#EEF3FD', aws: 'Managed Blockchain' },
+  { icon: Brain, title: 'AI Compliance Engine', desc: 'AI reads government mining circulars, detects policy changes, identifies affected mines, and creates action checklists automatically.', color: '#E8622A', bg: '#FEF3EE', aws: 'Amazon Bedrock' },
+  { icon: FileCheck, title: 'Permit & License Management', desc: 'Centralized document store for mining leases, environmental clearances, and vehicle permits. AI sends expiry alerts 90 days in advance.', color: '#3B6FE0', bg: '#EEF3FD', aws: 'S3 + Textract' },
 ]
 
 export default function ServicesOverview() {
@@ -19,14 +19,14 @@ export default function ServicesOverview() {
     <section className="section" style={{ background: '#F5F4F0' }}>
       <div className="container-custom">
         <SectionHeading
-          badge="What We Do"
-          title={<>Services Built for <span style={{ color: '#E8622A' }}>Real Impact</span></>}
-          subtitle="We offer end-to-end software development services that cover the full product lifecycle — from strategy and design to engineering and operations."
+          badge="Platform Modules"
+          title={<>MineChain Core <span style={{ color: '#E8622A' }}>Modules</span></>}
+          subtitle="Six integrated modules covering every dimension of mining operations — from GPS tracking to government compliance. All built on AWS-native architecture."
           center
         />
 
         <div ref={ref} className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          {services.map((s, i) => (
+          {modules.map((s, i) => (
             <div
               key={s.title}
               className="card group cursor-default"
@@ -44,14 +44,20 @@ export default function ServicesOverview() {
                 <s.icon size={20} style={{ color: s.color }} />
               </div>
               <h3 className="font-semibold text-base mb-2" style={{ color: '#1A1A2E' }}>{s.title}</h3>
-              <p className="text-sm leading-relaxed" style={{ color: '#4A5568' }}>{s.desc}</p>
+              <p className="text-sm leading-relaxed mb-3" style={{ color: '#4A5568' }}>{s.desc}</p>
+              <span
+                className="inline-flex items-center gap-1.5 text-xs font-semibold px-2.5 py-1 rounded-lg"
+                style={{ background: s.bg, color: s.color }}
+              >
+                ☁️ {s.aws}
+              </span>
             </div>
           ))}
         </div>
 
         <div className="text-center mt-10">
-          <Link to="/services" className="btn-secondary">
-            View All Services <ArrowRight size={14} />
+          <Link to="/minechain" className="btn-secondary">
+            View Full Platform <ArrowRight size={14} />
           </Link>
         </div>
       </div>

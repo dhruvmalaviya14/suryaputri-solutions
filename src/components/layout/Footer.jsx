@@ -32,24 +32,23 @@ function FooterLogo() {
 const footerLinks = {
   Company: [
     { label: 'About Us', to: '/about' },
-    { label: 'Our Team', to: '/about' },
-    { label: 'Careers', to: '/careers' },
+    { label: 'MineChain Platform', to: '/minechain' },
     { label: 'Insights', to: '/insights' },
     { label: 'Contact', to: '/contact' },
   ],
-  Services: [
-    { label: 'Web Development', to: '/services' },
-    { label: 'Mobile Apps', to: '/services' },
-    { label: 'UI/UX Design', to: '/services' },
-    { label: 'AI/ML Solutions', to: '/services' },
-    { label: 'Cloud & DevOps', to: '/services' },
+  Modules: [
+    { label: 'GPS Vehicle Tracking', to: '/services' },
+    { label: 'Royalty Management', to: '/services' },
+    { label: 'AI Compliance Engine', to: '/services' },
+    { label: 'Blockchain Audit Layer', to: '/services' },
+    { label: 'Government Dashboard', to: '/services' },
   ],
-  Solutions: [
-    { label: 'SaaS Development', to: '/services' },
-    { label: 'E-Commerce', to: '/services' },
-    { label: 'MERN Stack', to: '/services' },
-    { label: 'API Integrations', to: '/services' },
-    { label: 'Maintenance', to: '/services' },
+  Platform: [
+    { label: 'Production Monitoring', to: '/services' },
+    { label: 'Permit Management', to: '/services' },
+    { label: 'Predictive Analytics', to: '/services' },
+    { label: 'Module Prototypes', to: '/projects' },
+    { label: 'Pilot Programme', to: '/contact' },
   ],
 }
 
@@ -83,14 +82,14 @@ export default function Footer() {
           <div className="lg:col-span-2">
             <FooterLogo />
             <p className="mt-4 text-sm leading-relaxed" style={{ color: 'rgba(255,255,255,0.5)', maxWidth: '300px' }}>
-              A modern software development company building scalable digital products and IT solutions for clients across industries and geographies.
+              Building India's Mining Intelligence Platform — MineChain combines GPS tracking, AI compliance, royalty management, and blockchain audit trails on AWS-native infrastructure.
             </p>
             <div className="mt-6 space-y-2.5">
-              <a href="mailto:info@suryaputrienterprise.in" className="flex items-center gap-2.5 text-sm transition-colors" style={{ color: 'rgba(255,255,255,0.5)' }}
+              <a href="mailto:admin@suryaputrienterprise.in" className="flex items-center gap-2.5 text-sm transition-colors" style={{ color: 'rgba(255,255,255,0.5)' }}
                 onMouseEnter={e => e.currentTarget.style.color = '#E8622A'}
                 onMouseLeave={e => e.currentTarget.style.color = 'rgba(255,255,255,0.5)'}
               >
-                <Mail size={14} /> info@suryaputrienterprise.in
+                <Mail size={14} /> admin@suryaputrienterprise.in
               </a>
               <a href="tel:+918012345678" className="flex items-center gap-2.5 text-sm transition-colors" style={{ color: 'rgba(255,255,255,0.5)' }}
                 onMouseEnter={e => e.currentTarget.style.color = '#E8622A'}
