@@ -111,9 +111,6 @@ export default function Hero() {
 
                 <div className="mt-5 p-4 rounded-2xl" style={{ background: '#FEF3EE', border: '1px solid rgba(232,98,42,0.15)' }}>
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: '#E8622A' }}>
-                      <span className="text-white text-lg font-bold">🤖</span>
-                    </div>
                     <div>
                       <p className="text-xs font-semibold" style={{ color: '#E8622A' }}>AI COMPLIANCE ALERT</p>
                       <p className="text-sm font-semibold" style={{ color: '#1A1A2E' }}>New Gujarat royalty rate — 3 mines affected</p>
