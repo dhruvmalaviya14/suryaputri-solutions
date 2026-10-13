@@ -31,7 +31,7 @@ export default function Hero() {
           {/* Left content */}
           <div>
             <div className="badge mb-6 animate-fade-in">
-              ⛏️ &nbsp;Mining Intelligence Platform
+              Mining Intelligence Platform
             </div>
 
             <h1
@@ -95,14 +95,14 @@ export default function Hero() {
 
                 <div className="space-y-3">
                   {[
-                    { label: 'Active Vehicles', value: '62', color: '#E8622A', icon: '🚛' },
-                    { label: 'Royalty This Month', value: '₹28 L', color: '#3B6FE0', icon: '💰' },
-                    { label: 'Compliance Score', value: '97.4%', color: '#10B981', icon: '✅' },
-                    { label: 'AI Alerts Today', value: '2 New', color: '#F59E0B', icon: '🤖' },
+                    { label: 'Active Vehicles', value: '62', color: '#E8622A' },
+                    { label: 'Royalty This Month', value: '₹28 L', color: '#3B6FE0' },
+                    { label: 'Compliance Score', value: '97.4%', color: '#10B981' },
+                    { label: 'AI Alerts Today', value: '2 New', color: '#F59E0B' },
                   ].map(item => (
                     <div key={item.label} className="flex items-center justify-between p-3 rounded-xl" style={{ background: '#F5F4F0' }}>
-                      <span className="text-sm font-medium flex items-center gap-2" style={{ color: '#4A5568' }}>
-                        <span>{item.icon}</span>{item.label}
+                      <span className="text-sm font-medium" style={{ color: '#4A5568' }}>
+                        {item.label}
                       </span>
                       <span className="text-base font-bold font-display" style={{ color: item.color }}>{item.value}</span>
                     </div>

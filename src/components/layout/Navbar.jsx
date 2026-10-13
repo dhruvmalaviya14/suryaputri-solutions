@@ -5,11 +5,10 @@ import Logo from '../ui/Logo'
 
 const navLinks = [
   { to: '/', label: 'Home' },
-  { to: '/minechain', label: '⛏️ MineChain' },
+  { to: '/minechain', label: 'MineChain' },
   { to: '/about', label: 'About' },
   { to: '/services', label: 'Modules' },
   { to: '/projects', label: 'Prototypes' },
-  { to: '/insights', label: 'Insights' },
   { to: '/contact', label: 'Contact' },
 ]
 

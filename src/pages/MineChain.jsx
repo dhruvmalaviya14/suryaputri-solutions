@@ -18,7 +18,7 @@ function PageHero() {
           className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-8"
           style={{ background: 'rgba(232,98,42,0.15)', color: '#E8622A', border: '1px solid rgba(232,98,42,0.2)' }}
         >
-          ⛏️ MineChain Platform
+          MineChain Platform
         </span>
         <h1
           className="font-display font-bold mb-6"
@@ -81,9 +81,9 @@ function ProblemSection() {
         />
         <div ref={ref} className="grid md:grid-cols-3 gap-5">
           {[
-            { icon: '📋', title: 'Paper Challans', desc: 'Every trip is recorded on physical paper challans — easily altered, easily lost, and impossible to audit in real time. GPS vendor data and royalty records never match.' },
-            { icon: '💸', title: 'Manual Royalty Errors', desc: 'Royalty rates change frequently via government circulars. Companies manually track these changes — leading to errors, underpayments, and penalty disputes that drag through courts for years.' },
-            { icon: '🚛', title: 'No Real-Time Visibility', desc: 'Neither mine operators nor government departments know where vehicles are, what is being extracted, or whether extraction is within permitted quantities — until a physical inspection.' },
+            { title: 'Paper Challans', desc: 'Every trip is recorded on physical paper challans — easily altered, easily lost, and impossible to audit in real time. GPS vendor data and royalty records never match.' },
+            { title: 'Manual Royalty Errors', desc: 'Royalty rates change frequently via government circulars. Companies manually track these changes — leading to errors, underpayments, and penalty disputes that drag through courts for years.' },
+            { title: 'No Real-Time Visibility', desc: 'Neither mine operators nor government departments know where vehicles are, what is being extracted, or whether extraction is within permitted quantities — until a physical inspection.' },
           ].map((p, i) => (
             <div
               key={p.title}
@@ -95,7 +95,6 @@ function ProblemSection() {
                 transition: 'all 0.6s ease',
               }}
             >
-              <div className="text-3xl mb-4">{p.icon}</div>
               <h3 className="font-semibold text-base mb-2" style={{ color: '#1A1A2E' }}>{p.title}</h3>
               <p className="text-sm leading-relaxed" style={{ color: '#4A5568' }}>{p.desc}</p>
             </div>
@@ -109,14 +108,14 @@ function ProblemSection() {
 function SolutionSection() {
   const [ref, visible] = useScrollAnimation()
   const modules = [
-    { num: '01', title: 'Live Vehicle Tracking', aws: 'Kinesis + Lambda', icon: '🛰️', desc: 'Real-time GPS streams for every mining vehicle. Route geofencing, unauthorized movement alerts, driver analytics.' },
-    { num: '02', title: 'Production Monitoring', aws: 'EMR + S3', icon: '📊', desc: 'Material extracted and transported tracked in real-time. Daily production reports and site productivity dashboards.' },
-    { num: '03', title: 'Royalty Management', aws: 'Bedrock + RDS', icon: '💰', desc: 'Automatic royalty calculations. AI reads government circulars and updates rates. Payment reminders and audit records.' },
-    { num: '04', title: 'Blockchain Audit Layer', aws: 'Managed Blockchain', icon: '🔗', desc: 'Tamper-proof records for every trip, production log, and royalty payment. Zero fraud. Instant government verification.' },
-    { num: '05', title: 'AI Compliance Engine', aws: 'Amazon Bedrock', icon: '🤖', desc: 'Reads new government mining circulars automatically. Detects policy changes. Identifies affected mines. Creates action checklists.' },
-    { num: '06', title: 'Permit Management', aws: 'S3 + Textract', icon: '📄', desc: 'All mining leases, environmental clearances, and vehicle permits centralized. AI sends expiry alerts 90 days ahead.' },
-    { num: '07', title: 'AI Predictive Analytics', aws: 'SageMaker + EMR', icon: '📈', desc: 'Predict vehicle breakdowns, production delays, royalty obligations, and illegal movement patterns before they occur.' },
-    { num: '08', title: 'Government Dashboard', aws: 'API Gateway + QuickSight', icon: '🏛️', desc: 'State mining departments monitor all active mines, royalty collection, and compliance across their jurisdiction in real-time.' },
+    { num: '01', title: 'Live Vehicle Tracking', aws: 'Kinesis + Lambda', desc: 'Real-time GPS streams for every mining vehicle. Route geofencing, unauthorized movement alerts, driver analytics.' },
+    { num: '02', title: 'Production Monitoring', aws: 'EMR + S3', desc: 'Material extracted and transported tracked in real-time. Daily production reports and site productivity dashboards.' },
+    { num: '03', title: 'Royalty Management', aws: 'Bedrock + RDS', desc: 'Automatic royalty calculations. AI reads government circulars and updates rates. Payment reminders and audit records.' },
+    { num: '04', title: 'Blockchain Audit Layer', aws: 'Managed Blockchain', desc: 'Tamper-proof records for every trip, production log, and royalty payment. Zero fraud. Instant government verification.' },
+    { num: '05', title: 'AI Compliance Engine', aws: 'Amazon Bedrock', desc: 'Reads new government mining circulars automatically. Detects policy changes. Identifies affected mines. Creates action checklists.' },
+    { num: '06', title: 'Permit Management', aws: 'S3 + Textract', desc: 'All mining leases, environmental clearances, and vehicle permits centralized. AI sends expiry alerts 90 days ahead.' },
+    { num: '07', title: 'AI Predictive Analytics', aws: 'SageMaker + EMR', desc: 'Predict vehicle breakdowns, production delays, royalty obligations, and illegal movement patterns before they occur.' },
+    { num: '08', title: 'Government Dashboard', aws: 'API Gateway + QuickSight', desc: 'State mining departments monitor all active mines, royalty collection, and compliance across their jurisdiction in real-time.' },
   ]
 
   return (
@@ -145,7 +144,6 @@ function SolutionSection() {
               onMouseLeave={e => { e.currentTarget.style.borderColor = '#E5E1D8'; e.currentTarget.style.background = '#FAFAF8' }}
             >
               <div className="flex items-center gap-2 mb-3">
-                <span className="text-xl">{m.icon}</span>
                 <span className="text-xs font-bold" style={{ color: '#E8622A' }}>{m.num}</span>
               </div>
               <h3 className="font-semibold text-sm mb-1.5" style={{ color: '#1A1A2E' }}>{m.title}</h3>
@@ -233,9 +231,9 @@ function MarketSection() {
         />
         <div ref={ref} className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {[
-            { icon: '⛏️', title: 'Mining Operators', value: '80+', desc: 'Active quarry & mine operators in Gujarat, Rajasthan, Maharashtra targeted in Phase 1. Each operates 5–15+ vehicles daily.', color: '#E8622A' },
-            { icon: '🏛️', title: 'Government Departments', value: '3', desc: 'State mining departments in Phase 1 states — Gujarat, Rajasthan, Maharashtra — as potential government SaaS customers.', color: '#3B6FE0' },
-            { icon: '💰', title: 'Annual Royalty Volume', value: '₹2,500 Cr+', desc: 'Mineral royalty collected annually across Gujarat, Rajasthan & Maharashtra combined. The MineChain SaaS fee on tracked royalty is the core revenue model.', color: '#10B981' },
+            { title: 'Mining Operators', value: '80+', desc: 'Active quarry & mine operators in Gujarat, Rajasthan, Maharashtra targeted in Phase 1. Each operates 5–15+ vehicles daily.', color: '#E8622A' },
+            { title: 'Government Departments', value: '3', desc: 'State mining departments in Phase 1 states — Gujarat, Rajasthan, Maharashtra — as potential government SaaS customers.', color: '#3B6FE0' },
+            { title: 'Annual Royalty Volume', value: '₹2,500 Cr+', desc: 'Mineral royalty collected annually across Gujarat, Rajasthan & Maharashtra combined. The MineChain SaaS fee on tracked royalty is the core revenue model.', color: '#10B981' },
           ].map((m, i) => (
             <div
               key={m.title}
@@ -247,7 +245,6 @@ function MarketSection() {
                 transition: 'all 0.6s ease',
               }}
             >
-              <div className="text-3xl mb-3">{m.icon}</div>
               <div className="font-display font-bold text-2xl mb-1" style={{ color: m.color }}>{m.value}</div>
               <h3 className="font-semibold text-sm mb-2" style={{ color: '#1A1A2E' }}>{m.title}</h3>
               <p className="text-xs leading-relaxed" style={{ color: '#4A5568' }}>{m.desc}</p>

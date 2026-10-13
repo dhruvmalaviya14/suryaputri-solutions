@@ -1,21 +1,15 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import {
-  Truck, BarChart3, IndianRupee, Link as LinkIcon,
-  Brain, FileCheck, TrendingUp, Building2,
-  ArrowRight, CheckCircle
-} from 'lucide-react'
+import { ArrowRight, CheckCircle } from 'lucide-react'
 import SectionHeading from '../components/ui/SectionHeading'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { services } from '../data/services'
-
-const iconMap = { Truck, BarChart3, IndianRupee, Link: LinkIcon, Brain, FileCheck, TrendingUp, Building2 }
 
 function PageHero() {
   return (
     <section className="pt-32 pb-20 px-4" style={{ background: 'linear-gradient(160deg, #FAFAF8 0%, #F5F4F0 100%)' }}>
       <div className="max-w-4xl mx-auto text-center">
-        <span className="badge mb-6 mx-auto">⛏️ Platform Modules</span>
+        <span className="badge mb-6 mx-auto">Platform Modules</span>
         <h1
           className="font-display font-bold mb-6"
           style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#1A1A2E', letterSpacing: '-0.03em', lineHeight: '1.1' }}
@@ -33,7 +27,6 @@ function PageHero() {
 
 function ServiceCard({ service, index, visible }) {
   const [expanded, setExpanded] = useState(false)
-  const Icon = iconMap[service.icon]
   const isOrange = service.color === 'orange'
 
   return (
@@ -46,17 +39,9 @@ function ServiceCard({ service, index, visible }) {
         transition: 'all 0.6s ease',
       }}
     >
-      <div className="flex items-start gap-4 mb-4">
-        <div
-          className="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0"
-          style={{ background: isOrange ? '#FEF3EE' : '#EEF3FD' }}
-        >
-          {Icon && <Icon size={20} style={{ color: isOrange ? '#E8622A' : '#3B6FE0' }} />}
-        </div>
-        <div>
-          <h3 className="font-semibold text-base mb-1" style={{ color: '#1A1A2E' }}>{service.title}</h3>
-          <p className="text-sm leading-relaxed" style={{ color: '#4A5568' }}>{service.shortDesc}</p>
-        </div>
+      <div className="mb-4">
+        <h3 className="font-semibold text-base mb-1" style={{ color: '#1A1A2E' }}>{service.title}</h3>
+        <p className="text-sm leading-relaxed" style={{ color: '#4A5568' }}>{service.shortDesc}</p>
       </div>
 
       {/* AWS Services badges */}

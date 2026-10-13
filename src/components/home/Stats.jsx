@@ -3,9 +3,9 @@ import { useScrollAnimation } from '../../hooks/useScrollAnimation'
 
 const stats = [
   { end: 40, suffix: '+', label: 'Engineers & Designers', desc: 'Across Bangalore and Hyderabad' },
-  { end: 25, suffix: '+', label: 'Projects Delivered', desc: 'Since 2017, zero abandonments' },
+  { end: 25, suffix: '+', label: 'Projects Delivered', desc: 'Since 2023, zero abandonments' },
   { end: 96, suffix: '%', label: 'Client Satisfaction', desc: 'Measured post-project' },
-  { end: 4, suffix: '+', label: 'Years Experience', desc: 'Enterprise to startup' },
+  { end: 2, suffix: '+', label: 'Years Experience', desc: 'Enterprise to startup' },
 ]
 
 export default function Stats() {

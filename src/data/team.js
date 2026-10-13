@@ -59,24 +59,14 @@ export const team = [
 
 export const timeline = [
   {
-    year: '2020',
-    title: 'Company Founded',
-    description: 'Vijay and Ravi started Suryaputri with a clear mission: build technology that solves real problems for real industries.',
-  },
-  {
-    year: '2021',
-    title: 'Mining Industry Research Begins',
-    description: 'After client engagements with mining operators, the team identified a massive gap — no platform existed to solve GPS tracking, royalty management, and compliance in one place.',
-  },
-  {
-    year: '2022',
-    title: 'Cloud & AI Capability Building',
-    description: 'Invested deeply in AWS architecture, AI/ML, and blockchain technology — building the engineering foundation for what would become MineChain.',
+    year: '2023',
+    title: 'Company Founded & Mining Research',
+    description: 'Vijay and Ravi started Suryaputri in 2023 with a clear mission: build technology that solves real problems. After engaging with mining operators, the team identified the massive gap — no platform existed to solve GPS tracking, royalty management, and compliance in one integrated place.',
   },
   {
     year: '2023',
     title: 'MineChain Concept Validated',
-    description: 'Initial conversations with mining operators in Gujarat confirmed the market need. Began designing the 8-module MineChain platform architecture on AWS.',
+    description: 'Initial conversations with mining operators in Gujarat confirmed the market need. Began designing the 8-module MineChain platform architecture on AWS, investing in AWS, AI/ML, and blockchain technology.',
   },
   {
     year: '2024',

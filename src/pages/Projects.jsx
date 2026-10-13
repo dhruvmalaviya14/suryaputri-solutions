@@ -20,7 +20,7 @@ function PageHero() {
   return (
     <section className="pt-32 pb-20 px-4" style={{ background: 'linear-gradient(160deg, #FAFAF8 0%, #F5F4F0 100%)' }}>
       <div className="max-w-4xl mx-auto text-center">
-        <span className="badge mb-6 mx-auto">⛏️ Platform Prototypes</span>
+        <span className="badge mb-6 mx-auto">Platform Prototypes</span>
         <h1
           className="font-display font-bold mb-6"
           style={{ fontSize: 'clamp(2.2rem, 4vw, 3.5rem)', color: '#1A1A2E', letterSpacing: '-0.03em', lineHeight: '1.1' }}
@@ -60,10 +60,10 @@ function ProjectCard({ project, index, visible }) {
         style={{ borderBottom: '1px solid #E5E1D8' }}
       >
         <div
-          className="w-14 h-14 rounded-2xl flex items-center justify-center text-3xl"
-          style={{ background: 'white', boxShadow: '0 4px 16px rgba(0,0,0,0.10)' }}
+          className="w-14 h-14 rounded-2xl flex items-center justify-center font-bold text-lg"
+          style={{ background: 'white', boxShadow: '0 4px 16px rgba(0,0,0,0.10)', color: project.accent || '#E8622A' }}
         >
-          {moduleIcons[project.id]}
+          {String(project.id).padStart(2, '0')}
         </div>
         {/* Status badge */}
         <div

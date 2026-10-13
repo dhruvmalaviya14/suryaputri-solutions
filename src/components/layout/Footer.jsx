@@ -33,7 +33,6 @@ const footerLinks = {
   Company: [
     { label: 'About Us', to: '/about' },
     { label: 'MineChain Platform', to: '/minechain' },
-    { label: 'Insights', to: '/insights' },
     { label: 'Contact', to: '/contact' },
   ],
   Modules: [
