@@ -85,12 +85,6 @@ export default function AWSArchitecture() {
               }}
             >
               <div className="flex items-center gap-3 mb-3">
-                <div
-                  className="w-9 h-9 rounded-lg flex items-center justify-center text-lg flex-shrink-0"
-                  style={{ background: s.color + '20', border: `1px solid ${s.color}30` }}
-                >
-                  {s.icon}
-                </div>
                 <div>
                   <p className="text-xs font-bold" style={{ color: '#FF9900' }}>{s.service}</p>
                   <p className="text-xs" style={{ color: 'rgba(255,255,255,0.4)' }}>{s.purpose}</p>

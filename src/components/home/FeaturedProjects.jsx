@@ -10,15 +10,6 @@ const statusColors = {
   'Planned': { bg: '#EEF3FD', color: '#3B6FE0' },
 }
 
-const moduleIcons = {
-  1: '🛰️',
-  2: '🤖',
-  3: '🔗',
-  4: '📊',
-  5: '📄',
-  6: '🏛️',
-}
-
 export default function FeaturedProjects() {
   const [ref, visible] = useScrollAnimation()
   const featured = projects.slice(0, 3)
@@ -57,10 +48,10 @@ export default function FeaturedProjects() {
                   style={{ border: '1px solid #E5E1D8' }}
                 >
                   <div
-                    className="w-14 h-14 rounded-2xl flex items-center justify-center"
-                    style={{ background: project.accent + '20', border: `1px solid ${project.accent}30` }}
+                    className="w-14 h-14 rounded-2xl flex items-center justify-center font-display font-bold text-2xl"
+                    style={{ background: project.accent + '20', border: `1px solid ${project.accent}30`, color: project.accent }}
                   >
-                    <span className="text-3xl">{moduleIcons[project.id]}</span>
+                    {i + 1}
                   </div>
                   {/* Status badge */}
                   <div

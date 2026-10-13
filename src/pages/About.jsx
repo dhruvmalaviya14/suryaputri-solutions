@@ -184,15 +184,15 @@ function Team() {
 
 function Achievements() {
   const achievements = [
-    '🏆 AWS-Native Architecture — 9 Services',
-    '🛰️ GPS Tracking Prototype: Live',
-    '🤖 AI Compliance Engine: In Development',
-    '🔗 Amazon Managed Blockchain: Integrated',
-    '📊 80+ Mines Addressable Market (Phase 1)',
-    '🌍 3 States: Gujarat, Rajasthan, Maharashtra',
-    '💰 ₹150 Cr+ Annual Royalty Trackable',
-    '🏛️ Government Dashboard: Planned',
-    '📦 8 Platform Modules in MineChain',
+    'AWS-Native Architecture — 9 Services',
+    'GPS Tracking Prototype: Live',
+    'AI Compliance Engine: In Development',
+    'Amazon Managed Blockchain: Integrated',
+    '80+ Mines Addressable Market (Phase 1)',
+    '3 States: Gujarat, Rajasthan, Maharashtra',
+    '₹150 Cr+ Annual Royalty Trackable',
+    'Government Dashboard: Planned',
+    '8 Platform Modules in MineChain',
   ]
   const [ref, visible] = useScrollAnimation()
 
